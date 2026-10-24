@@ -7,7 +7,7 @@ import Chatbot from "@/components/Chatbot";
 
 export const metadata: Metadata = {
   title: {
-    default: "Putarasa | Dari Dapur, Untuk Bumi",
+    default: "Putarasa | Dari Sisa, Menjadi Asa",
     template: "%s | Putarasa",
   },
   description:
