@@ -1,4 +1,5 @@
-﻿
+import PutarasaLogo from "@/components/landing/PutarasaLogo";
+
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import {
@@ -156,11 +157,7 @@ export default async function SelectRolePage() {
         <header className="flex items-center justify-between gap-4">
           <Link href="/" className="group flex items-center gap-3">
             <div className="flex h-12 w-12 items-center justify-center rounded-[17px] bg-[#FFCC24] shadow-[0_8px_20px_rgba(255,204,36,0.25)] transition-transform group-hover:rotate-[-8deg]">
-              <Leaf
-                size={25}
-                strokeWidth={2.5}
-                className="text-[#315C31]"
-              />
+              <PutarasaLogo size={30} showText={false} />
             </div>
 
             <div>
@@ -168,7 +165,7 @@ export default async function SelectRolePage() {
                 PUTARASA
               </div>
               <div className="text-[10px] font-semibold tracking-[0.14em] text-[#8D806B]">
-                DARI DAPUR, UNTUK BUMI
+                DARI SISA, MENJADI ASA
               </div>
             </div>
           </Link>

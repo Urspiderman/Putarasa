@@ -1,6 +1,6 @@
-
 "use client";
 
+import PutarasaLogo from "@/components/landing/PutarasaLogo";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import {
@@ -230,11 +230,7 @@ export default function SupplierNavigation({
           aria-label="PUTARASA Supplier Beranda"
         >
           <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/50">
-            <Leaf
-              size={27}
-              fill="#47763A"
-              className="text-[#47763A]"
-            />
+            <PutarasaLogo size={40} showText={false} />
           </div>
 
           <div className="hidden xl:block">

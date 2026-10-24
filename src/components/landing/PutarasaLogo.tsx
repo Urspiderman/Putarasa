@@ -3,29 +3,43 @@ import Image from "next/image";
 
 type LogoProps = {
   showText?: boolean;
+  showName?: boolean;
   size?: number;
   className?: string;
 };
 
 export default function PutarasaLogo({
   showText = true,
-  size = 42,
+  showName,
+  size = 48,
   className = "",
 }: LogoProps) {
-  return (
-    <div className={`inline-flex items-center gap-3 ${className}`}>
-      <Image
-        src="/logo-putarasa.svg"
-        alt="Logo PUTARASA"
-        width={size}
-        height={size}
-        className="shrink-0 object-contain"
-        priority
-      />
+  const displayText = showName ?? showText;
 
-      {showText && (
-        <span className="text-[24px] font-extrabold tracking-[-0.05em] text-[#302218]">
-          Putarasa
+  return (
+    <div className={`inline-flex items-center gap-2.5 ${className}`}>
+      {/* Logo dengan background kuning sesuai navbar */}
+      <div
+        className="flex shrink-0 items-center justify-center overflow-hidden rounded-xl bg-[#FFDA57]"
+        style={{
+          width: size,
+          height: size,
+        }}
+      >
+        <Image
+          src="/logo-putarasa.svg"
+          alt="Logo PUTARASA"
+          width={size}
+          height={size}
+          className="h-full w-full object-contain"
+          unoptimized
+        />
+      </div>
+
+      {/* Nama PUTARASA */}
+      {displayText && (
+        <span className="whitespace-nowrap text-[24px] font-black leading-none tracking-tight text-[#332417]">
+          PUTARASA
         </span>
       )}
     </div>

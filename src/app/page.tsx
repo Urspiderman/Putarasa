@@ -561,7 +561,7 @@ export default function HomePage() {
           <div>
             <PutarasaLogo size={38} />
             <p className="mt-3 text-sm text-[#766E63]">
-              Dari Dapur, Untuk Bumi.
+              Dari Sisa, Menjadi Asa.
             </p>
           </div>
           <div className="flex flex-wrap gap-5">

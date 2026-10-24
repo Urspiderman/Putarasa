@@ -1,6 +1,6 @@
-
 "use client";
 
+import PutarasaLogo from "@/components/landing/PutarasaLogo";
 import { useEffect, useState } from "react";
 import type { ElementType } from "react";
 import Link from "next/link";
@@ -366,11 +366,7 @@ export default function CourierSidebar() {
             className="flex items-center gap-3"
           >
             <div className="relative flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#FFFDF5] shadow-sm">
-              <Leaf
-                size={26}
-                strokeWidth={2.6}
-                className="text-[#426D32]"
-              />
+              <PutarasaLogo size={42} showText={false} />
 
               <span className="absolute -right-1 -top-1 h-3 w-3 rounded-full border-2 border-[#FFDA57] bg-[#47763A]" />
             </div>
@@ -535,10 +531,7 @@ export default function CourierSidebar() {
           className="flex items-center gap-2"
         >
           <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-white">
-            <Leaf
-              size={20}
-              className="text-[#426D32]"
-            />
+            <PutarasaLogo size={32} showText={false} />
           </div>
 
           <span className="text-lg font-black tracking-tight">
