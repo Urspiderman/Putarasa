@@ -1,0 +1,1 @@
+"use client";import {useRouter} from 'next/navigation';import {browserDb} from '@/lib/supabase';export default function Signout(){const r=useRouter();return <button className="mt-6 text-sm text-red-700" onClick={async()=>{await browserDb().auth.signOut();r.push('/login');r.refresh()}}>Keluar</button>}
